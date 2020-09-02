@@ -1,4 +1,4 @@
-#include "rk3399_arm.config"
+#include "rk3399_arm64.config"
 #include "base.config"
 #include "base_extra.config"
 #include "gpu.config"
@@ -19,10 +19,7 @@
 #include "qt.config"
 #include "qt_app.config"
 #include "ntfs.config"
-
-#include "gdb.config"
-
-BR2_ROOTFS_OVERLAY="board/rockchip/rk3399/fs-overlay-32/"
+BR2_ROOTFS_OVERLAY="board/rockchip/rk3399/fs-overlay-64/"
 BR2_TARGET_GENERIC_HOSTNAME="rk3399"
 BR2_TARGET_GENERIC_ISSUE="Welcome to RK3399 Buildroot"
 BR2_PACKAGE_RKWIFIBT_AMPAKALL=y
